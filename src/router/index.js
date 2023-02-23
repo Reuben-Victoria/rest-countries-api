@@ -8,7 +8,7 @@ import { Home } from "../pages/Home.page";
 export const Router = () => {
   const { colorMode } = useContext(GlobalContext);
   return (
-    <Box className={`font-body  h-[100vh] ${colorMode ? "dark" : "light"}`}>
+    <Box className={`font-body ${colorMode ? "dark" : "light"}`}>
       <BrowserRouter>
         <Header />
         <Routes>

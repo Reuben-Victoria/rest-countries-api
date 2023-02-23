@@ -8,13 +8,17 @@
 }
 
 .darkElement {
-  @apply bg-neutral-darkModeElement text-neutral-darkModeText
+  @apply bg-neutral-darkModeElement text-neutral-darkModeText;
 }
 
-.dark{
-  @apply bg-neutral-darkModeBg text-neutral-darkModeText
+.dark {
+  @apply bg-neutral-darkModeBg text-neutral-darkModeText;
 }
 
-.light{
-  @apply bg-neutral-lightModeBg text-neutral-lightModeText
+.lightElement {
+  @apply bg-white text-neutral-lightModeText;
+}
+
+.light {
+  @apply bg-neutral-lightModeBg text-neutral-lightModeText;
 }

@@ -7,7 +7,7 @@ export const CountryCard = ({ population, name, region, capital }) => {
   return (
     <Box
       className={`rounded-lg  md:w-[400px] shadow-md overflow-hidden ${
-        colorMode ? "darkElement" : "light"
+        colorMode ? "darkElement" : "lightElement"
       }`}
     >
       <Box>

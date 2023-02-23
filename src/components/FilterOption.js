@@ -6,7 +6,7 @@ export const FilterOption = () => {
   return (
     <Box
       className={`w-[50%] md:w-[20%] border-none outline-none mt-[3rem]  ${
-        colorMode ? "darkElement" : "light"
+        colorMode ? "darkElement" : "lightElement"
       }  md:mt-[0]`}
     >
       <Select

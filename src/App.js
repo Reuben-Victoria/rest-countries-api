@@ -1,9 +1,12 @@
+import { DataProvider } from "./context/GlobalContext";
 import { Router } from "./router";
 
 function App() {
   return (
-    <div className="font-body bg-neutral-lightModeBg h-[100vh]">
+    <div >
+      <DataProvider>
      <Router/>
+     </DataProvider>
     </div>
   );
 }

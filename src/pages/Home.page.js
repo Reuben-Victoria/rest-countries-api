@@ -3,7 +3,7 @@ import { CountryCard } from "../components/CountryCard";
 import { FilterOption } from "../components/FilterOption";
 import { SearchBar } from "../components/SearchBar";
 
-export const Home = () => {
+export const Home = ({colorMode}) => {
   return (
     <Box className='text-[ lightModeText]'>
       <Box className='p-8 md:px-40 '>
@@ -15,7 +15,7 @@ export const Home = () => {
         </Box>
 
         <Box className='p-4 md:p-[0]'>
-          <CountryCard />
+          <CountryCard colorMode={colorMode}/>
         </Box>
       </Box>
     </Box>

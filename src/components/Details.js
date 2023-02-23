@@ -12,7 +12,7 @@ export const Details = ({
   nativeName
 }) => {
   return (
-    <Box className='md:grid grid-cols-2 gap-20 text-detailPage  items-center justify-between'>
+    <Box className='md:grid  grid-cols-2 gap-20 text-detailPage  items-center justify-between'>
       <Box className=''>
         <img src='https://flagcdn.com/as.svg' alt='flags' />
       </Box>

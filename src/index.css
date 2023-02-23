@@ -6,3 +6,15 @@
 .borderBox {
   @apply border-[bg-neutral-lightModeBg] text-[fontSize-homePageItems] p-4 bg-white overflow-hidden h-16 w-full rounded-[5px] shadow-lg;
 }
+
+.darkElement {
+  @apply bg-neutral-darkModeElement text-neutral-darkModeText
+}
+
+.dark{
+  @apply bg-neutral-darkModeBg text-neutral-darkModeText
+}
+
+.light{
+  @apply bg-neutral-lightModeBg text-neutral-lightModeText
+}

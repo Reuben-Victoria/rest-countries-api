@@ -1,12 +1,17 @@
+import PropTypes from "prop-types";
+import { useContext } from "react";
+import GlobalContext from "../context/GlobalContext";
 import { Box, Text } from "@chakra-ui/react";
-export const CountryCard = ({population,name, region, capital }) => {
+export const CountryCard = ({ population, name, region, capital }) => {
+  const {colorMode} = useContext(GlobalContext);
   return (
-    <Box className='rounded-lg  md:w-[400px] bg-[white] shadow-md overflow-hidden'>
+    <Box
+      className={`rounded-lg  md:w-[400px] shadow-md overflow-hidden ${
+        colorMode ? "darkElement" : "light"
+      }`}
+    >
       <Box>
-        <img
-          src='https://flagcdn.com/as.svg'
-          alt='Country flag'
-        />
+        <img src='https://flagcdn.com/as.svg' alt='Country flag' />
       </Box>
       <Box className='p-8'>
         <Text className='text-[1.25rem] font-extrabold pb-4' as='h3'>
@@ -33,4 +38,11 @@ export const CountryCard = ({population,name, region, capital }) => {
       </Box>
     </Box>
   );
+};
+
+CountryCard.propTypes = {
+  population: PropTypes.string,
+  name: PropTypes.string,
+  region: PropTypes.string,
+  capital: PropTypes.string,
 };

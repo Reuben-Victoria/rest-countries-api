@@ -1,7 +1,6 @@
 import { Box, Text, HStack, Icon } from "@chakra-ui/react";
 import { useContext } from "react";
 import { IoIosMoon } from "react-icons/io";
-import { FaMoon } from "react-icons/fa";
 import GlobalContext from "../context/GlobalContext";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -25,8 +24,8 @@ export const Header = () => {
           Where in the world?
         </Text>
 
-        <HStack onClick={toggleColorMode}>
-          <Icon as={colorMode ? IoIosMoon : FaMoon} boxSize={[6, 8, 8]} />
+        <HStack onClick={toggleColorMode} cursor={"pointer"}>
+          <Icon as={IoIosMoon} boxSize={[6, 8, 8]} />
           <Text fontWeight={"bold"}>
             {colorMode ? "DarkMode" : "LightMode"}
           </Text>

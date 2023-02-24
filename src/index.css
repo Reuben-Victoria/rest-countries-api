@@ -22,3 +22,7 @@
 .light {
   @apply bg-neutral-lightModeBg text-neutral-lightModeText;
 }
+
+.darkLoader{
+  @apply bg-neutral-darkModeElement text-neutral-darkModeText;
+}

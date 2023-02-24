@@ -10,13 +10,13 @@ export const CountryDetails = () => {
   const { name } = useParams();
   const navigate = useNavigate();
   const { colorMode } = useContext(GlobalContext);
-  const { data, isFetching } = useCountryDetails(name);
+  const { data, isLoading } = useCountryDetails(name);
   const country = (data ?? [])[0];
   console.log(data ?? [], "Data");
 
   return (
     <Box className='md:px-40 md:h-[calc(100vh-80px)] '>
-      {isFetching ? (
+      {isLoading? (
         <Loader />
       ) : (
         <Box className='p-8'>

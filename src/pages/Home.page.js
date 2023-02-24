@@ -7,16 +7,16 @@ import { SearchBar } from "../components/SearchBar";
 import { useCountries } from "../hooks/useCountries";
 
 export const Home = () => {
-  const { isFetching, data } = useCountries();
+  const { isLoading, data } = useCountries();
   const [select, onSelectChange] = useState("");
 
   const filterOption = data?.filter((country) => country?.region === select);
-  console.log(isFetching, "isFetching>>>")
+  console.log(isLoading, "isFetching>>>")
 
   return (
     <Box className='text-[ lightModeText]'>
       <Box className='p-8 md:px-40 '>
-        {isFetching ? (
+        {isLoading ? (
           <Loader />
         ) : (
           <>

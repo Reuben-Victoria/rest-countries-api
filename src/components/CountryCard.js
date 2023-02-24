@@ -15,9 +15,10 @@ export const CountryCard = ({
   const navigate = useNavigate();
   return (
     <Box
-      className={`rounded-lg  shadow-md overflow-hidden ${
+      className={`rounded-lg hover:shadow-lg hover:opacity-[70%] cursor-pointer  shadow-md overflow-hidden ${
         colorMode ? "darkElement" : "lightElement"
-      }`} onClick={()=>navigate(`country-details/${name}`)}
+      }`}
+      onClick={() => navigate(`country-details/${name}`)}
     >
       <Box>
         <img src={src} alt={alt} />
@@ -50,7 +51,7 @@ export const CountryCard = ({
 };
 
 CountryCard.propTypes = {
-  population: PropTypes.string,
+  population: PropTypes.number,
   name: PropTypes.string,
   region: PropTypes.string,
   capital: PropTypes.string,

@@ -9,12 +9,14 @@ export const Details = ({
   domain,
   currencies,
   languages,
-  nativeName
+  nativeName,
+  alt,
+  src
 }) => {
   return (
     <Box className='md:grid grid-cols-2 gap-20 text-detailPage  items-center justify-between'>
       <Box className=''>
-        <img src='https://flagcdn.com/as.svg' alt='flags' />
+        <img src={src} alt={alt} />
       </Box>
       <Box>
         <Text
@@ -29,7 +31,7 @@ export const Details = ({
               <Text as={"span"} fontWeight={"bold"}>
                 Native Name:
               </Text>
-              <Text as={"span"}>{nativeName}</Text>
+              <Text as={"span"}> {nativeName}</Text>
             </Text>
             <Text pb={"0.25rem"}>
               <Text as={"span"} fontWeight={"bold"}>
@@ -99,6 +101,8 @@ Details.propTypes = {
   domain: PropTypes.string,
   currencies: PropTypes.string,
   languages: PropTypes.string,
+  src:PropTypes.string,
+  alt:PropTypes.string,
   nativeName: PropTypes.string,
 }
 

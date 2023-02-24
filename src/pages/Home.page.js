@@ -11,10 +11,6 @@ export const Home = () => {
 
   const filterOption = data?.filter((country) => country?.region === select);
 
-  console.log(filterOption, "Filter>>>>>");
-
-  console.log(select, ">>>>>>>");
-
   return (
     <Box className='text-[ lightModeText]'>
       <Box className='p-8 md:px-40 '>

@@ -6,8 +6,9 @@ export const fetchAllCountries = async () => {
 };
 
 const fetchSingleCountry = async ({ name }) => {
-  const  response  = await axios.get(`name/${name}`);
-  return response.data;
+  const  {data}  = await axios.get(`name/${name}`);
+  console.log(data, "kkkk")
+  return data;
 };
 
 export default fetchSingleCountry;

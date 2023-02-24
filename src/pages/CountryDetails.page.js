@@ -43,6 +43,7 @@ export const CountryDetails = () => {
             subRegion={country?.subregion}
             capital={country?.capital}
             border={country?.borders}
+            languages={country?.languages[0]}
             domain={country?.topLevelDomain[0]}
           />
         </Box>

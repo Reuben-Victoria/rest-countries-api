@@ -17,6 +17,7 @@ export const Details = ({
   src,
 }) => {
   const { colorMode } = useContext(GlobalContext);
+  console.log(languages, "LANG");
   return (
     <Box className='md:grid grid-cols-2 gap-20 text-detailPage  items-center justify-between'>
       <Box className=''>
@@ -79,7 +80,7 @@ export const Details = ({
               <Text fontWeight={"bold"} as={"span"}>
                 Languages:
               </Text>
-              <Text as={"span"}>{languages}</Text>
+               <Text as={"span"}> {languages?.nativeName}</Text>
             </Text>
           </Box>
         </Box>

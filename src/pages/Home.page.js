@@ -36,7 +36,7 @@ export const Home = () => {
                         name={country?.name}
                         population={country?.population}
                         region={country?.region}
-                        capital={country?.capital?.[0]}
+                        capital={country?.capital}
                         src={country?.flags?.svg}
                         alt={country?.flags?.alt}
                       />
@@ -49,7 +49,7 @@ export const Home = () => {
                         name={country?.name}
                         population={country?.population}
                         region={country?.region}
-                        capital={country?.capital?.[0]}
+                        capital={country?.capital}
                         src={country?.flags?.svg}
                         alt={country?.flags?.alt}
                       />

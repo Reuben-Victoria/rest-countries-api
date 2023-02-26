@@ -120,7 +120,7 @@ Details.propTypes = {
   border: PropTypes.array,
   domain: PropTypes.string,
   currencies: PropTypes.string,
-  languages: PropTypes.string,
+  languages: PropTypes.object,
   src: PropTypes.string,
   alt: PropTypes.string,
   nativeName: PropTypes.string,

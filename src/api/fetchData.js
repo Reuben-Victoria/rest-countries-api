@@ -2,14 +2,16 @@ import { axios } from "../services/api";
 
 export const fetchAllCountries = async () => {
   const { data } = await axios.get("all");
-  console.log(data, "kkkk");
   return data;
 };
 
-const fetchSingleCountry = async ({ name }) => {
+export const fetchSingleCountry = async ({ name }) => {
   const { data } = await axios.get(`name/${name}`);
-  console.log(data, "kkkk");
   return data;
 };
 
-export default fetchSingleCountry;
+export const fetchSearchData = async ({inputData}) => {
+  const {data} = await axios.get(`name/${inputData}`)
+  console.log(inputData, "searchResult>>>>>")
+  return data
+}
